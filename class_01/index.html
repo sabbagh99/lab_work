@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questionnaire</title>
+    <style>
+       body {
+         background-image: url("Q.png");}
+
+        li {
+            color: blue; 
+        }
+
+        h1 {
+            background-color: rgb(230, 224, 224);
+            color:rgb(3, 3, 85);
+        }
+    </style>
+  </head>
+  <body>
+      <nav>
+          <ul>
+              <li>More Questionnaire</li>
+              <li>Your all Questionnaire</li>
+              <li>Contact US</li>
+          </ul>
+      </nav>
+      
+      <main>
+        <h1>Class 01</h1>
+        <p style="background-color: yellow; color: rgb(46, 1, 46);" >What is your name?</p>
+        <p style="background-color: rgb(245, 146, 146); color: maroon;">Where are you living?</p>
+        <p style="background-color: salmon; color: rgb(93, 8, 21);">How old are you?</p>
+        <p style="background-color: orange; color: rgb(48, 2, 92);">What is the number of family members?</p>
+      </main>
+      <footer>
+          <p><h3>Thank you for visiting our site.</h3></p>
+      </footer>
+      <script>
+          var firstQuestion = prompt('What is your name? ');
+          alert("Your name is "+firstQuestion);
+          console.log(firstQuestion);
+
+          var secondQuestion =  prompt("Where are you living?");
+          alert("You liveing in "+secondQuestion);
+          console.log(secondQuestion);
+
+          var thirdQuestion =  prompt("How old are you?");
+          alert("Your age is "+thirdQuestion);
+          console.log(thirdQuestion);
+
+          var forthQuestion =  prompt("What is the number of family members?");
+          alert("The number of your family is "+forthQuestion);
+          console.log(forthQuestion);
+
+      </script>
+  </body>
+</html>
