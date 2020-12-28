@@ -1,17 +1,17 @@
-'use strict'
-alert ('Hello in about me page, I will give you a quick quiz about me answer with (yes/no)')
-var Q1 = prompt('Do you think my age is 32? ');
+// 'use strict'
+// alert ('Hello in about me page, I will give you a quick quiz about me answer with (yes/no)')
+// var Q1 = prompt('Do you think my age is 32? ');
 
-switch (Q1.toLocaleLowerCase()){
-    case 'yes':
-    case 'y':
-        alert('No its actualy 22');
-        break;
-        case 'no':
-        case 'n':
-        alert ('Yes you are right its 22');
-        break;
-}
+// switch (Q1.toLocaleLowerCase()){
+//     case 'yes':
+//     case 'y':
+//         alert('No its actualy 22');
+//         break;
+//         case 'no':
+//         case 'n':
+//         alert ('Yes you are right its 22');
+//         break;
+// }
 
 // var Q2 = prompt('My fovarate color is green?');
 // switch (Q2.toLocaleLowerCase()){
@@ -57,7 +57,10 @@ switch (Q1.toLocaleLowerCase()){
 //         alert('Yes you are right')
 //         break;
 // }
-// console.log('Yes you are correct');
-// console.log('Yes you are not correct');
-    alert('Yes you are correct');
-    alert('Yes you are not correct');
+// // console.log('Yes you are correct');
+// // console.log('Yes you are not correct');
+//     alert('Yes you are correct');
+//     // alert('Yes you are not correct');
+// var name1 = prompt('What is your name? ')
+// alert(name1+' Welcome in my page');
+// alert(name1+ ' And thank you for answer my qustion')
