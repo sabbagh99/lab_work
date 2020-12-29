@@ -86,24 +86,24 @@ correctAnswer++
 }
 alert('your answer is: '+ Q6);
 alert('Too low');
-var i=0;
-var Q7 = prompt('What do you think is my top ten movies ?').toLocaleLowerCase();
-var answer = ['Mad Max', 'tron', 'Avangers', 'Avatar', 'Inception', 'interstellar', 'shutter island', 'Joker', 'Get Out', 'The martian'];
-if (Q7 === answer[0] ||Q7 === answer[1] ||Q7 === answer[2] ||Q7 === answer[3] ||Q7 === answer[4] ||Q7 === answer[5] ||Q7 === answer[6] ||Q7 === answer[7] ||Q7 === answer[8] ||Q7 === answer[9]){
+var i = 0;
+var Q7 = prompt('What do you think is my top ten movies ?');
+Q7 = Q7.toLowerCase();
+var answer = ['mad max', 'tron', 'avangers', 'avatar', 'inception', 'interstellar', 'shutter island', 'joker', 'get out', 'the martian'];
+if (answer.includes(Q7)) {
     alert('Your answer is right.');
     correctAnswer++
-
-}else{
-  while(Q7 !== answer[0] ||Q7 !== answer[1] ||Q7 !== answer[2] ||Q7 !== answer[3] ||Q7 !== answer[4] ||Q7 !== answer[5] ||Q7 !== answer[6] ||Q7 !== answer[7] ||Q7 !== answer[8] ||Q7 !== answer[9]){
-    Q7 = prompt('What do you think is my top ten movies ?').toLocaleLowerCase();
-    i++
-    if(i === 6){
-        alert('write one of this option: Mad Max, tron, Avangers, Avatar, Inception, interstellar, shutter island, Joker, Get Out, The martian')
-    }
-  }
+} else {
+    while (!answer.includes(Q7)) {
+        Q7 = prompt('What do you think is my top ten movies ?');
+        Q7 = Q7.toLowerCase();
+        i++
+        if (i === 5) {
+            alert('write one of this option: Mad Max, tron, Avangers, Avatar, Inception, interstellar, shutter island, Joker, Get Out, The martian')
+        }
+    } alert('Your answer is right')
 }
-alert('your correct answer is '+correctAnswer);
+alert('your correct answer is ' + correctAnswer);
 var name1 = prompt('What is your name? ')
-
 alert(name1 + ' Welcome in my page');
 alert(name1 + ' And thank you for answer my qustion')
