@@ -1,0 +1,15 @@
+body {
+    background-color: yellow;
+}
+ h2 {
+    font-size: 60px;
+}
+.h-color{font-size:  25px;
+}
+.li-font{
+    font-size: 20px;
+    font-style: italic;
+}
+body{
+    margin: 15px;
+}
