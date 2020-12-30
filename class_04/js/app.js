@@ -22,6 +22,7 @@ switch (Q1.toLocaleLowerCase()) {
 }
 
 
+
 var Q2 = prompt('My fovarate color is green?');
 
 // console.log(Q2);
