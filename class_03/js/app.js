@@ -11,7 +11,7 @@ switch (Q1.toLocaleLowerCase()) {
         break;
     case 'no':
     case 'n':
-correctAnswer++
+        correctAnswer++
         alert('Yes you are right its 22');
         break;
 }
@@ -25,7 +25,7 @@ switch (Q2.toLocaleLowerCase()) {
         break;
     case 'no':
     case 'n':
-    correctAnswer++
+        correctAnswer++
         alert('Yes you are right its yallow');
         break;
 }
@@ -36,7 +36,7 @@ switch (Q3.toLocaleLowerCase()) {
     case 'yes':
     case 'y':
         alert('Yes you are right');
-correctAnswer++
+        correctAnswer++
         break;
     case 'no':
     case 'n':
@@ -54,7 +54,7 @@ switch (Q4.toLocaleLowerCase()) {
     case 'no':
     case 'n':
         alert('Yes you are right its shawarma');
-correctAnswer++
+        correctAnswer++
         break;
 }
 var Q5 = prompt('Do you think iam Married');
@@ -67,7 +67,7 @@ switch (Q5.toLocaleLowerCase()) {
         break;
     case 'no':
     case 'n':
-correctAnswer++
+        correctAnswer++
         alert('Yes you are right')
         break;
 }
@@ -75,16 +75,16 @@ var Q6 = prompt('Just guess a number ');
 var i = 0;
 // console.log(Q6);
 alert("Your answer is: " + Q6);
-while(Q6 >=50){
+while (Q6 >= 50) {
     Q6 = prompt('Just guess a number ');
     i++
-correctAnswer++
-    if(i === 3){
+    correctAnswer++
+    if (i === 3) {
         alert('Too high');
         alert("you sholud write a number less than 50");
     }
 }
-alert('your answer is: '+ Q6);
+alert('your answer is: ' + Q6);
 alert('Too low');
 var i = 0;
 var Q7 = prompt('What do you think is my top ten movies ?');
@@ -93,17 +93,27 @@ var answer = ['mad max', 'tron', 'avangers', 'avatar', 'inception', 'interstella
 if (answer.includes(Q7)) {
     alert('Your answer is right.');
     correctAnswer++
-} else {
+}
+else {
     while (!answer.includes(Q7)) {
         Q7 = prompt('What do you think is my top ten movies ?');
         Q7 = Q7.toLowerCase();
+
         i++
         if (i === 5) {
-            alert('write one of this option: Mad Max, tron, Avangers, Avatar, Inception, interstellar, shutter island, Joker, Get Out, The martian')
+            alert('write one of this option: Mad Max, tron, Avangers, Avatar, Inception, interstellar, shutter island, Joker, Get Out, The martian');
+            prompt('What do you think is my top ten movies ?');
+            break;
         }
-    } alert('Your answer is right')
+    }
+}   
+if (answer.includes(Q7)) {
+    alert('Your answer is right.');
+    correctAnswer++
 }
-alert('your correct answer is ' + correctAnswer);
+else { alert('Your answer is wrong')
+}
+alert('your correct answer is ' + correctAnswer + ' Of 7');
 var name1 = prompt('What is your name? ')
 alert(name1 + ' Welcome in my page');
-alert(name1 + ' And thank you for answer my qustion')
+alert(name1 + ' And thank you for answer my qustion');
