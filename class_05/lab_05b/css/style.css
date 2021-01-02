@@ -1,0 +1,23 @@
+body {
+    background-image: url('Q.png');
+    color: rgb(1, 28, 32);
+}
+ h2 {
+    font-size: 60px;
+}
+.h-color{font-size:  25px;
+    
+    border: 5px solid green;
+    padding: 5px;
+    margin: 5px;
+}
+.li-font{
+    font-size: 20px;
+    font-style: italic;
+}
+body{
+    margin: 15px;
+}
+.text-color{
+    color: greenyellow;
+}
